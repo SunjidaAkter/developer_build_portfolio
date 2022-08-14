@@ -1,84 +1,84 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-
+import { Link } from "react-router-dom"
 import logo from "../../../Assets/Images/nav-footer/logo.png";
 
 import "./footer.css";
 
 const Footer = () => {
   return (
-    <section id="footer">
+    <section id="footer ">
       <footer className="footer p-10 bg-white  text-base-content mt-20">
-        <div className="footer text-base-content custom_container">
+        <div className="md:px-[100px] px-[100px] lg:px-0 text-base-content md:grid md:grid-cols-2 grid grid-cols-1 lg:grid lg:grid-cols-4 custom_container justify-center">
           <div>
-            <a className="text-2xl text-gray-500 font-normal mb-2">
+            <p className="text-2xl text-gray-500 font-normal mb-2">
               Developer Build
-            </a>
-            <a className="text-gray-400">Polashbari, Ashulia</a>
-            <a className="text-gray-400">Savar, Dhaka-1344</a>
-            <a className="text-gray-400">Bangladesh</a>
+            </p>
+            <p className="text-gray-400">Polashbari, Ashulia</p>
+            <p className="text-gray-400">Savar, Dhaka-1344</p>
+            <p className="text-gray-400">Bangladesh</p>
 
-            <a className=" text-gray-400 pt-5">
+            <p className=" text-gray-400 pt-5">
               {" "}
               <span className="font-bold text-md text-gray-500">
                 Phone:
               </span>{" "}
               +8801998839126
-            </a>
-            <a className="text-gray-400">
+            </p>
+            <p className="text-gray-400">
               <span className="font-bold text-md text-gray-500">Email:</span>{" "}
               developerbuild62@gmail.com
-            </a>
+            </p>
           </div>
           <div>
-            <a className="text-xl text-gray-700 font-semibold mb-2">
+            <p className="text-xl text-gray-700 font-semibold mb-2">
               Useful Links
-            </a>
-            <a className="text-gray-500 hover:text-blue-500 cursor-pointer">
+            </p>
+            <Link to="/" className="text-gray-500 hover:text-blue-500 cursor-pointer block">
               <i className="fa-solid fa-chevron-right text-blue-500 mr-1"></i>{" "}
               Home
-            </a>
-            <a className="text-gray-500 hover:text-blue-500 cursor-pointer">
+            </Link>
+            <Link to="/aboutUs" className="text-gray-500 hover:text-blue-500 cursor-pointer block">
               <i className="fa-solid fa-chevron-right text-blue-500 mr-1"></i>{" "}
               About us
-            </a>
-            <a className="text-gray-500 hover:text-blue-500 cursor-pointer">
+            </Link>
+            <Link to="/services" className="text-gray-500 hover:text-blue-500 cursor-pointer block">
               <i className="fa-solid fa-chevron-right text-blue-500 mr-1"></i>{" "}
               Services
-            </a>
-            <a className="text-gray-500 hover:text-blue-500 cursor-pointer">
+            </Link>
+            <Link to="/teamOfService" className="text-gray-500 hover:text-blue-500 cursor-pointer block">
               <i className="fa-solid fa-chevron-right text-blue-500 mr-1"></i>{" "}
               Team of Service
-            </a>
-            <a className="text-gray-500 hover:text-blue-500 cursor-pointer">
+            </Link>
+            <Link to="/privacyPolicy" className="text-gray-500 hover:text-blue-500 cursor-pointer block">
               <i className="fa-solid fa-chevron-right text-blue-500 mr-1"></i>{" "}
               privacy policy
-            </a>
+            </Link>
           </div>
           <div>
-            <a className="text-xl text-gray-700 font-semibold mb-2">
+            <p className="text-xl text-gray-700 font-semibold mb-2">
               Our Services
-            </a>
-            <a className="text-gray-500 hover:text-blue-500 cursor-pointer">
+            </p>
+            <Link to="/webDesign" className="text-gray-500 hover:text-blue-500 cursor-pointer block">
               <i className="fa-solid fa-chevron-right text-blue-500 mr-1"></i>{" "}
               Web Design
-            </a>
-            <a className="text-gray-500 hover:text-blue-500 cursor-pointer">
+            </Link>
+            <Link to="/webDevelopment" className="text-gray-500 hover:text-blue-500 cursor-pointer block">
               <i className="fa-solid fa-chevron-right text-blue-500 mr-1"></i>{" "}
               Web Development
-            </a>
-            <a className="text-gray-500 hover:text-blue-500 cursor-pointer">
+            </Link>
+            <Link to="/productManagement" className="text-gray-500 hover:text-blue-500 cursor-pointer block">
               <i className="fa-solid fa-chevron-right text-blue-500 mr-1"></i>{" "}
               Product Management
-            </a>
-            <a className="text-gray-500 hover:text-blue-500 cursor-pointer">
+            </Link>
+            <Link to="/marketing" className="text-gray-500 hover:text-blue-500 cursor-pointer block">
               <i className="fa-solid fa-chevron-right text-blue-500 mr-1"></i>{" "}
               Marketing
-            </a>
-            <a className="text-gray-500 hover:text-blue-500 cursor-pointer">
+            </Link>
+            <Link to="/graphicDesign" className="text-gray-500 hover:text-blue-500 cursor-pointer block">
               <i className="fa-solid fa-chevron-right text-blue-500 mr-1"></i>{" "}
               Graphic Design
-            </a>
+            </Link>
           </div>
           <div>
             <span className="text-gray-700 text-xl font-semibold">
@@ -104,8 +104,8 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <footer className="footer px-10 py-8  text-black ">
-        <div className="items-center grid-flow-col">
+      <footer className="footer  py-8  text-black custom_container">
+        <div className="items-center grid-flow-col px-20 lg:px-0  md:px-0 ">
           <img className="h-[50px] w-[50px]" src={logo} alt="" />
           <p className="text-gray-500">
             © Copyright <span className="font-bold">Developer Build.</span> All
@@ -115,7 +115,7 @@ const Footer = () => {
         </div>
         <div className="md:place-self-center md:justify-self-end">
           <div className="grid grid-flow-col gap-4">
-            <div className="social-links text-center flex justify-center items-center pt-1">
+            <div className="social-links text-center flex justify-center items-center pt-1 px-20 lg:px-0 md:px-0">
               <a href="#" className="twitter">
                 <i className="fa-brands  fa-twitter"></i>
               </a>
